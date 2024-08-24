@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferdinand Arnold | Web Developer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #007acc;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ffffff;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #282828;
+            border-top: 5px solid #007acc;
+        }
+
+        .hero h2 {
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .skills, .portfolio, .certifications {
+            padding: 40px 0;
+            border-bottom: 2px solid #007acc;
+        }
+
+        .skills h2, .portfolio h2, .certifications h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .skills-grid, .portfolio-grid, .certifications-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .skills-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .skill, .project, .certification {
+            background-color: #333333;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .certification img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .cert-name {
+            font-size: 1.2em;
+            color: #007acc;
+            margin: 0;
+        }
+
+        .testimonial {
+            background-color: #444444;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact form label, #contact form input, #contact form textarea {
+            margin-bottom: 15px;
+        }
+
+        #contact form button {
+            padding: 15px;
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #007acc;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer .social-links a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Ferdinand Arnold</h1>
+            <p>Crafting Solutions with Code, Web Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome, I'm Ferdinand Arnold</h2>
+            <p>Web Developer from Pretoria, South Africa. I build innovative and dynamic web applications.</p>
+            <a href="#contact" class="cta">Connect with Me</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <p>Java, Kotlin, C#, PHP - Developing software solutions and Android apps.</p>
+                </div>
+                <div class="skill">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript - Crafting responsive and dynamic websites.</p>
+                </div>
+                <div class="skill">
+                    <h3>Database Management</h3>
+                    <p>SQL, Database design - Efficiently structuring and managing databases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Featured Work</h2>
+            <div class="portfolio-grid">
+                <div class="project">
+                    <h3>Calculator App</h3>
+                    <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project">
+                    <h3>Dice Game</h3>
+                    <p>A fun and interactive game created using JavaScript.</p>
+                </div>
+                <div class="project">
+                    <h3>Recipe Recording App</h3>
+                    <p>A web app for managing and recording recipes, built using modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Professional Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification">
+                    <img src="Screenshot 2024-05-12 115742.png" alt="Certification">
+                    <p class="cert-name">Google Data, Data, Data, Everywhere</p>
+                </div>
+                <div class="certification">
+                    <img src="Screenshot 2024-05-12 120251.png" alt="Certification">
+                    <p class="cert-name">Technical Support Fundamentals</p>
+                </div>
+                <div class="certification">
+                    <img src="Screenshot 2024-05-12 120448.png" alt="Certification">
+                    <p class="cert-name">Cyber Security Fundamentals</p>
+                </div>
+                <div class="certification">
+                    <img src="Screenshot 2024-07-28 184517.png" alt="Google Fundamentals of Digital Marketing">
+                    <p class="cert-name">Google: Fundamentals of Digital Marketing</p>
+                </div>
+                <div class="certification">
+                    <img src="66-alx-aice-ai-career-essentials-certificate-arnold-ferdinand.png" alt="Alx Artificial Intelligence">
+                    <p class="cert-name">Alx: Artificial Intelligence</p>
+                </div>
+                <div class="certification">
+                    <img src="Screenshot 2024-08-08 204147.png" alt="freeCodeCamp Responsive Web Design">
+                    <p class="cert-name">freeCodeCamp: Responsive Web Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"Ferdinand consistently delivers high-quality work. His attention to detail and creativity are unmatched."</p>
+                <p>- Alex Johnson, Senior Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="your-form-handler.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ferdinand Arnold. All rights reserved.</p>
+            <div class="social-links">
+                <a href="mailto:ferdinandarnold544@gmail.com" target="_blank">Gmail</a>
+                <a href="https://www.linkedin.com/in/arnold-ferdinand-5b7242302/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/10197874" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
